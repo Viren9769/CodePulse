@@ -14,8 +14,6 @@ export class CategoryService {
 
   constructor(private http: HttpClient, private cookieservice: CookieService) { }
 
-
-
  getAllCategory(): Observable<Category[]> {
   return this.http.get<Category[]>(`${environment.apiBaseUrl}/api/Categories`);
  }
