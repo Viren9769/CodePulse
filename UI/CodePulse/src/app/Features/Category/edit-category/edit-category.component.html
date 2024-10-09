@@ -1,6 +1,8 @@
 <div class="container">
     <h1 class="mt-3"> Edit Category</h1>
-
+    <!-- <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+    </div> -->
     <ng-container *ngIf="category;else notFound">
     
         <form #form="ngForm" (ngSubmit)="onFormsubmit()">

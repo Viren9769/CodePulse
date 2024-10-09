@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodePulse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+598811113f9b9cf1cca7b56048b7c7e7352fe7bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodePulse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodePulse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

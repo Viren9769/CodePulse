@@ -2,6 +2,7 @@
 using CodePulse.Models.Domain;
 using CodePulse.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace CodePulse.Repository.Implementation
 {
@@ -35,7 +36,21 @@ namespace CodePulse.Repository.Implementation
 
         public async Task<IEnumerable<Category>> GetAllAsync()
         {
-           return await _context.Categories.ToListAsync();
+            //Query the database 
+       //    var categories =  _context.Categories.AsQueryable();
+
+            //filtering
+
+          /*  if(string.IsNullOrWhiteSpace(query) == false)
+            {
+                categories = categories.Where(x => x.Name.Contains(query));
+            }*/
+
+            //sorting
+
+            //pagination
+
+            return await _context.Categories.ToListAsync();
         }
 
         public async Task<Category?> GetById(Guid id)

@@ -53,9 +53,12 @@ namespace CodePulse.Controllers
         // https://localhost:44320/api/Categories
         [HttpGet]
         
-        public async Task<IActionResult> GetAllCategories()
+        public async Task<IActionResult> GetAllCategories()    // pass the category ot the getallAsync
         {
-          var cat =  await _categoryRepository.GetAllAsync();
+            // we do not want the all the result back only few
+            // when we will add query so it will give only the data I want not the whole 
+
+          var cat =  await _categoryRepository.GetAllAsync();       // pass the query to the repository for that change the interface first go to the Irepository
 
             // Map domain model through DTO
             var response = new List<CategoryDto>();
